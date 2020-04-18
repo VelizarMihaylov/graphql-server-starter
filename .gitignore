@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# lib
+/lib
+
 # misc
 .DS_Store
 .env.local
