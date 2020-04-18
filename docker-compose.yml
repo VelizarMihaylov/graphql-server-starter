@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  apollo-graphql:
+    build: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 4444:4444
+    environment:
+      - DOT_CMS_URL=https://prod-aag.dotcmscloud.com
+      - DOT_CMS_TOKEN=$DOT_CMS_TOKEN
+    command: yarn start:dev
