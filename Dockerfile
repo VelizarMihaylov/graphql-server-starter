@@ -14,8 +14,6 @@ COPY package*.json ./
 COPY yarn*.lock ./
 RUN yarn && yarn build
 
-COPY lib /usr/src/app/lib
-
 EXPOSE ${PORT}
 
 CMD [ "yarn", "run", ${START_ENV} ]
