@@ -16,4 +16,4 @@ RUN yarn && yarn build
 
 EXPOSE ${PORT}
 
-ENTRYPOINT [ "yarn", "run", ${START_ENV} ]
+CMD [ "yarn", "run", ${START_ENV} ]
